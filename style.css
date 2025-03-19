@@ -1,0 +1,351 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(30, 29, 29);
+    border: 20px solid black;
+    padding-top: 100px; /* Adjusted padding to prevent navbar overlap */
+}
+
+/* Nav Bar */
+nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: larger;
+    padding: 10px 50px;
+    position: fixed;
+    z-index: 1000;
+    height: 70px; /* Ensure navbar height doesn’t overlap */
+}
+
+/* For Nav_head Class */
+.nav_head {
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+/* Nav List */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    display: flex;
+}
+
+li a {
+    padding: 15px;
+    display: block;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+li a:hover {
+    color: lightskyblue;
+}
+
+/* Contact Button */
+.contact_btn {
+    padding: 10px 30px;
+    color: black;
+    margin-left: auto;
+    background-color: lightskyblue;
+    border-radius: 30px;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.contact_btn:hover {
+    color: white;
+    border: 3px solid lightskyblue;
+    background: transparent;
+    transform: scale(1.1); /* Smooth hover effect */
+}
+
+/* Home Page */
+.home {
+    padding: 220px 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.description {
+    padding-top: 20px;
+}
+
+.description h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.description h1 span {
+    color: lightskyblue;
+    font-size: 55px;
+    text-shadow: 0px 0px 15px lightskyblue;
+}
+
+.description h2 {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.description h2 span {
+    color: lightskyblue;
+    position: relative;
+    text-shadow: 0px 0px 15px lightskyblue;
+}
+
+.home img {
+    background-color: lightskyblue;
+    padding: 10;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px lightskyblue;
+    filter: brightness(1.1);
+    transition: .4s ease-in-out;
+}
+
+.home img:hover {
+    box-shadow: 0px 0px 50px lightskyblue;
+}
+
+.home p {
+    padding: 10px;
+    font-size: large;
+}
+
+/* About */
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 150px;
+    gap: 60px;
+    padding-top: 100px;
+    color: white;
+}
+
+.about_page h1 {
+    font-size: 125px;
+}
+
+.about_page h1 span {
+    color: lightskyblue;
+    text-shadow: 0px 0px 15px lightskyblue;
+}
+
+.about_page h2 {
+    font-size: 50px;
+}
+
+.about_page p {
+    font-size: 30px;
+}
+
+.aboutPhoto img {
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto;
+    background-color: lightskyblue;
+    padding: 10;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px lightskyblue;
+    filter: brightness(1.1);
+    transition: .4s ease-in-out;
+}
+
+.aboutPhoto img:hover {
+    box-shadow: 0px 0px 50px lightskyblue;
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 150px;
+    gap: 60px;
+    padding-top: 100px;
+    color: white;
+}
+
+.projectsPage h1 {
+    font-size: 125px;
+}
+
+.projectsPage h1 span {
+    color: lightskyblue;
+    text-shadow: 0px 0px 15px lightskyblue;
+}
+
+.projectPhotoOne img,
+.projectPhotoTwo img {
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto;
+    background-color: lightskyblue;
+    padding: 10;
+    box-shadow: 0px 0px 30px lightskyblue;
+    filter: brightness(1.1);
+    transition: .4s ease-in-out;
+}
+
+.projectPhotoOne img:hover,
+.projectPhotoTwo img:hover {
+    box-shadow: 0px 0px 50px lightskyblue;
+}
+
+.projectsPage h3 {
+    color: lightskyblue;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.projectsPage p {
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* Contact Me! */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Flexbox for contact form and image */
+.contact-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Contact box styling */
+.contact-box {
+    background-color: rgb(30, 29, 29);
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+/* Style inputs and textareas */
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: black;
+    color: lightskyblue;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: lightskyblue;
+    color: rgb(39, 38, 38);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style labels */
+label {
+    color: lightskyblue;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Contact image styling */
+.contact-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.contact-box h2 {
+    margin: 10px;
+    font-size: 50px;
+    color: lightskyblue;
+    text-shadow: 0px 0px 15px lightskyblue;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-box {
+        width: 100%;
+    }
+
+    .contact-image img {
+        width: 80%;
+    }
+}
+
+.popup{
+    width:360px;
+    gap: 2em;
+    text-align: center;
+
+    border: 1px solid black;
+    border-radius: 8px;
+
+    position: relative;
+    top: 0%;
+    left: 50%;
+    padding: 0 12px 30px;
+    transform: translate(-50%, -25%);
+
+    background-color: black;
+    color: lightskyblue;
+
+    transition: transform 0.4s, top 0.4;
+
+    visibility: hidden;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -250%)
+}
+
+.popup button{
+    color:black;
+    background-color: lightskyblue;
+    font-size: 25px;
+}

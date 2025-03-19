@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIC HW03</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <h1 class="nav_head">Wil Nahra</h1>
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="about.html">About Me</a> </li>
+            <li> <a href="projects.html">Projects</a> </li>
+        </ul>
+        <a href="contact.html"> <button class="contact_btn">Contact Me</button></a>
+        <label for="check" class="checkbtn">
+            <input type="checkbox" id="check" class="check-input">
+            <span class="check-icon"></span>
+        </label>
+    </nav>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-box">
+                <h2>Contact Me</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <input type="submit" value="Send" required>
+                </form>
+            </div>
+
+            <div class="contact-image">
+                <img src="Pictures/Thinking.jpg" alt="Contact Image">
+            </div>
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+        <h2>Thank You</h2>
+        <p>Your details have been submitted</p>
+        <button type="button" onclick="closePopup()">lol ok</button>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+        let form = document.getElementById("contactForm");
+
+        // Open the popup when the form is submitted
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+            openPopup();
+        });
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+<footer>
+    <p class="rights"> © 2025 Wil Nahra - All Rights Reserved</p>
+</footer>
+
+</html>
